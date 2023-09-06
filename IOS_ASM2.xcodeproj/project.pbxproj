@@ -22,7 +22,6 @@
 		FA1BA1922AA5CDEF00B5CDD1 /* EasyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BA1912AA5CDEF00B5CDD1 /* EasyGame.swift */; };
 		FA5DBA282AA5DB4500C45B1E /* NormalGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DBA272AA5DB4500C45B1E /* NormalGame.swift */; };
 		FA5DBA2C2AA5FA0200C45B1E /* HardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DBA2B2AA5FA0100C45B1E /* HardGame.swift */; };
-		FA5DBA302AA6057100C45B1E /* EndGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DBA2F2AA6057100C45B1E /* EndGame.swift */; };
 		FA5DBA342AA6597E00C45B1E /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DBA332AA6597E00C45B1E /* GameLevel.swift */; };
 		FA5DBA382AA6E9D400C45B1E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DBA372AA6E9D400C45B1E /* UserData.swift */; };
 		FA5DBA522AA708A200C45B1E /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DBA512AA708A200C45B1E /* LeaderboardView.swift */; };
@@ -73,7 +72,6 @@
 		FA1BA1912AA5CDEF00B5CDD1 /* EasyGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGame.swift; sourceTree = "<group>"; };
 		FA5DBA272AA5DB4500C45B1E /* NormalGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalGame.swift; sourceTree = "<group>"; };
 		FA5DBA2B2AA5FA0100C45B1E /* HardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGame.swift; sourceTree = "<group>"; };
-		FA5DBA2F2AA6057100C45B1E /* EndGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGame.swift; sourceTree = "<group>"; };
 		FA5DBA332AA6597E00C45B1E /* GameLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
 		FA5DBA372AA6E9D400C45B1E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		FA5DBA512AA708A200C45B1E /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
@@ -182,10 +180,9 @@
 			children = (
 				FA1BA1332AA4753E00B5CDD1 /* ContentView.swift */,
 				FA1BA17D2AA5B35800B5CDD1 /* MenuView.swift */,
-				FA5DBA332AA6597E00C45B1E /* GameLevel.swift */,
-				FA5DBA2F2AA6057100C45B1E /* EndGame.swift */,
-				FA5DBA582AA71DD000C45B1E /* Tutorial.swift */,
 				FA1BA1892AA5C78B00B5CDD1 /* GameView.swift */,
+				FA5DBA332AA6597E00C45B1E /* GameLevel.swift */,
+				FA5DBA582AA71DD000C45B1E /* Tutorial.swift */,
 				FA5DBA512AA708A200C45B1E /* LeaderboardView.swift */,
 			);
 			path = View;
@@ -337,7 +334,6 @@
 				FA5DBA282AA5DB4500C45B1E /* NormalGame.swift in Sources */,
 				FA1BA13B2AA4754000B5CDD1 /* Persistence.swift in Sources */,
 				FA5DBA2C2AA5FA0200C45B1E /* HardGame.swift in Sources */,
-				FA5DBA302AA6057100C45B1E /* EndGame.swift in Sources */,
 				FA5DBA5E2AA7B0CF00C45B1E /* GameData.swift in Sources */,
 				FA5DBA342AA6597E00C45B1E /* GameLevel.swift in Sources */,
 				FA1BA17E2AA5B35800B5CDD1 /* MenuView.swift in Sources */,

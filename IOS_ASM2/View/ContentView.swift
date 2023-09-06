@@ -9,51 +9,47 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
+            ZStack { // Use ZStack to center-align content
                 LinearGradient(gradient: Gradient(colors: [.blue, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .edgesIgnoringSafeArea(.all)
-                    .overlay(
-                        VStack(spacing: 15) {
-                            Spacer()
-                            Text("Welcome!")
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                                .padding(.bottom, 10)
+                
+                VStack(spacing: 15) {
+                    Spacer() // Push content to the center
+                    Text("Welcome!")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.bottom, 10)
 
-                            TextField("Enter your name", text: $name)
-                                .padding(10)
-                                .cornerRadius(20)
-                                .padding(.horizontal)
-                                .background(Color.white.opacity(0.8))
-                                .cornerRadius(10)
+                    TextField("Enter your name", text: $name)
+                        .padding(10)
+                        .cornerRadius(20)
+                        .padding(.horizontal)
+                        .background(Color.white.opacity(0.8))
+                        .cornerRadius(10)
 
-                            NavigationLink(destination: MenuView(name: $name)) { // Pass the name to MenuView
-                                Text("Sign In")
-                                    .frame(height: 50)
-                                    .frame(maxWidth: .infinity)
-                                    .foregroundColor(.white)
-                                    .font(.headline)
-                                    .background(
-                                        LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
-                                    )
-                                    .cornerRadius(10)
-                                    .padding()
-                            }
-                            .disabled(name.isEmpty)
+                    NavigationLink(destination: MenuView(name: $name)) { // Pass the name to MenuView
+                        Text("Sign In")
+                            .frame(height: 50)
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .background(
+                                LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+                            )
+                            .cornerRadius(10)
+                            .padding()
+                    }
+                    .disabled(name.isEmpty)
 
-                            if showError {
-                                Text("Please enter your name")
-                                    .foregroundColor(.red)
-                                    .padding(.top, 5)
-                            }
-
-//                            List(usernames, id: \.self) { username in
-//                                Text(username)
-//                            }
-                        }
-                        .padding(.top, 50)
-                    )
+                    if showError {
+                        Text("Please enter your name")
+                            .foregroundColor(.red)
+                            .padding(.top, 5)
+                    }
+                    Spacer() // Push content to the center
+                }
+                .padding(.top, 50)
             }
         }
     }

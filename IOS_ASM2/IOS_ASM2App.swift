@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct IOS_ASM2App: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var gameData = GameData() // Create an instance of GameData and mark it as a StateObject
 
+    let persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView() // Pass an empty array
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(gameData)    
         }
     }
 }
